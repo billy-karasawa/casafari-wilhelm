@@ -29,3 +29,4 @@ Format: `- YYYY-MM-DD · <topic> · <lesson> → filed in <file>`
 ## Live log
 - 2026-11-13 · registry · Billy approved all proposed levels: catch-up brief L2, follow-ups L2 (internal nudges only), Postmark KPIs L2, Api.Cat monitor L2, inbox triage L1 (list only) → playbooks/_registry.md
 - 2026-11-13 · slack · Any Slack message (reply, DM, post, nudge) needs Billy's approval first, at all levels → CLAUDE.md, playbooks/_registry.md, followup skill
+- 2026-11-13 · followup · Full sweep; doc 1-vU80… refreshed in place and renamed "2 to 13 Nov"; HR items kept out of the doc (chat only); tracker C0BF6BRQA8K may not be the Mila/Nuño split thread → followups/open-items.md, knowledge/gotchas.md

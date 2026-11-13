@@ -25,6 +25,7 @@ All proposed levels approved by Billy on 2026-11-13.
 | Marketing audience lists | `audience-lists.md` | L0 | L0 | 2026-11-13 | — | — | Owned by Billience; Wilhelm observes/audits only |
 | Gmail inbox triage | `inbox-triage.md` | **L1 (list only)** | L1 (list only) | 2026-11-13 | 1 | 0 | Never bulk-move; cost lesson |
 | Sales rep performance review | `sales-rep-performance-review.md` | L1 | **L1 (cap)** | 2026-11-13 | 1 | 1 | HR — never above L1 |
+| Slack trend & direction scan | `slack-trend-scan.md` | L0 | L0 | 2026-11-13 | 0 | 0 | First ask 13 Nov (window 2–13 Nov); blocked: Slack connector down |
 
 ## Promotion criteria
 - L0→L1: playbook has steps, definitions, quality checks.
