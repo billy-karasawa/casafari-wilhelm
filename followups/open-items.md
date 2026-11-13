@@ -45,7 +45,7 @@ Seeded 2026-11-13 from earlier sessions. Full `/followup` sweep 2026-11-13 (see 
 | 38 | Sales ops | Iñigo López: demo next week must be credited to AM not AE — reply | Billy | open | — | Slack DM | 2026-11-13 |
 | 39 | Finance ops | einforma fiscal-number check out of funds, all checks erroring (13 Nov) | Finance | waiting | — | #tech_finance_issues | 2026-11-13 |
 | 40 | Strategy | Slack trend scan v2 (week closed, ~125 threads) delivered: Google Doc 1RTMRtS-gRIXO89BundRvRszv5ZXNP3qeDPU5zxGC9i0 + HTML. Billy to pick automation candidates / quick wins | Billy | decision | 2026-11-17 | reports/2026-11-13-slack-trend-scan.html | 2026-11-13 |
-| 41 | Data | Black Friday attribution: 456 vs 389 new orgs unreconciled; HubSpot shows only 16 → use BigQuery `account_attribution` | Wilhelm | open | 2026-11-17 | BigQuery / #platform-api-mcp | 2026-11-13 |
+| 41 | Data | Black Friday attribution (R5): partial 13 Nov from 02:30 UTC export: 280 new orgs on 12 Nov, 244 BF-tagged (banners; 1 email), 28 used, 0 paid; 204/250 rows reached HubSpot. Full run scheduled Sat 14 Nov 08:12 Lisbon | Wilhelm | open | 2026-11-14 | BigQuery / #platform-api-mcp | 2026-11-13 |
 | 42 | Platform | HubSpot product "Casafari Platform" + deal stage requested 5 Nov | Billy | open | — | #platform-api-mcp | 2026-11-13 |
 | 43 | ApiCat | DM-permission bug: asked 4× (5–12 Nov), Demian "permanent solution" no ETA/owner; 6 deals affected | Billy (owner?) | open | — | ApiCat DM C0C9CKL256J | 2026-11-13 |
 | 44 | Marketing | BF vs Marcos 1:1 MCP outreach overlap — Yehor alignment meeting Mon 16 Nov | Yehor / Maryna | waiting | 2026-11-16 | #bi_requests C080EM6H32T | 2026-11-13 |
