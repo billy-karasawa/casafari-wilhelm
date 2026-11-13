@@ -29,6 +29,8 @@
 - Agents post in channels (Mira, Themis, Billy's own agents) — check before flagging something as open.
 - Gmail connector: one thread per call, two calls per move → expensive at scale; can't create filters.
 - Connectors can't fetch large Slack/Gmail attachments.
+- Slack `oldest` is epoch seconds: 11 Nov 2026 00:00 UTC = 1794355200 (not 1762819200, which is 2025). Compute with `date -d` before briefing sub-agents.
+- Mention search with `<@U025P35JVMH>` returned only Postmark noise (13 Nov); search the plain keyword/name too.
 - Mailcleanup converts non-ASCII to "?".
 
 ## Postmark

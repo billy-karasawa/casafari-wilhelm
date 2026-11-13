@@ -3,7 +3,7 @@
 - **Autonomy level:** see `_registry.md`
 - **Cadence:** ad hoc (after absence) — can become the daily `/brief` backbone
 - **Output destination:** Google Doc, **updated in place** on later passes (same link)
-- **Last run:** 2026-11-11 — https://docs.google.com/document/d/1-vU80fZVgp1LlbLiWPrNnCwaA0L_pW0Xz6s2zlDfuzY/edit
+- **Last run:** 2026-11-13 (refreshed in place; prev 2026-11-11) — https://docs.google.com/document/d/1-vU80fZVgp1LlbLiWPrNnCwaA0L_pW0Xz6s2zlDfuzY/edit
   ("Catch-up brief — 2 to 11 Nov 2026", private to Billy)
 
 ## Purpose
