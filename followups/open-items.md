@@ -44,3 +44,4 @@ Seeded 2026-11-13 from earlier sessions. Full `/followup` sweep 2026-11-13 (see 
 | 37 | Partnerships | Massimo partnership — Paula asks if ended (fee late; Roberto paying 13 Nov) | Billy | open | — | Slack group DM | 2026-11-13 |
 | 38 | Sales ops | Iñigo López: demo next week must be credited to AM not AE — reply | Billy | open | — | Slack DM | 2026-11-13 |
 | 39 | Finance ops | einforma fiscal-number check out of funds, all checks erroring (13 Nov) | Finance | waiting | — | #tech_finance_issues | 2026-11-13 |
+| 40 | Strategy | Slack trend & direction scan 2–13 Nov (automation candidates, new topics, company direction): preliminary read given 13 Nov; full run blocked by Slack connector disconnect | Wilhelm | open | 2026-11-17 | playbooks/slack-trend-scan.md | 2026-11-13 |
