@@ -27,3 +27,4 @@ Format: `- YYYY-MM-DD · <topic> · <lesson> → filed in <file>`
 - 2026-11-12 · platform · Contact Account_ID first in prospect matching; always produce HTML too; no names/emails in HTML → playbooks/platform-activity-dashboard.md
 
 ## Live log
+- 2026-11-13 · registry · Billy approved all proposed levels: catch-up brief L2, follow-ups L2 (internal nudges only), Postmark KPIs L2, Api.Cat monitor L2, inbox triage L1 (list only) → playbooks/_registry.md
