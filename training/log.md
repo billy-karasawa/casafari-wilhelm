@@ -28,3 +28,4 @@ Format: `- YYYY-MM-DD · <topic> · <lesson> → filed in <file>`
 
 ## Live log
 - 2026-11-13 · registry · Billy approved all proposed levels: catch-up brief L2, follow-ups L2 (internal nudges only), Postmark KPIs L2, Api.Cat monitor L2, inbox triage L1 (list only) → playbooks/_registry.md
+- 2026-11-13 · slack · Any Slack message (reply, DM, post, nudge) needs Billy's approval first, at all levels → CLAUDE.md, playbooks/_registry.md, followup skill

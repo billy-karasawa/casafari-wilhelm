@@ -12,8 +12,8 @@ description: Sweep for replies and progress on every open item in followups/open
    - If answered → summarise the answer in one line, set status `done` (or `next-step` with the
      new action), and file any new knowledge via the `/teach` rules.
    - If no answer and past **Due** → draft a short, polite nudge in Billy's tone
-     (see `knowledge/user-preferences.md`). Send it only if the item's topic is L2+ in the registry
-     and the recipient is internal; otherwise leave it as a draft for Billy.
+     (see `knowledge/user-preferences.md`). **Never send it yourself** — Slack messages always need Billy's
+     approval (Slack approval gate in `CLAUDE.md`); leave every nudge as a draft for Billy.
 3. Update **Last checked** on every item touched.
 4. Report to Billy:
    - ✅ Resolved since last check

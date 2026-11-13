@@ -34,6 +34,10 @@ then load the memory files listed under "Start of every session" before doing an
 | **L3** | Autonomous | Run on a schedule, handle routine variations, only escalate exceptions listed in the playbook. |
 
 Rules that apply at **every** level:
+- **Slack approval gate (Billy, 2026-11-13): any message Wilhelm would send in Slack — thread reply,
+  DM, channel post, mention or nudge — must be shown to Billy as a draft and approved before sending.**
+  This overrides L2/L3 for Slack. Use `slack_send_message_draft` or show the text in chat; never
+  `slack_send_message` / `slack_schedule_message` without an explicit "send it" for that message.
 - Never send to external parties (clients, partners) or write to CRM/production data unless
   the playbook explicitly allows it at that level.
 - Never delete, unsubscribe, trash or archive anything without explicit approval.

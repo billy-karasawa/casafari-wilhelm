@@ -3,6 +3,8 @@
 - **Autonomy level:** see `_registry.md` (already running on a schedule)
 - **Cadence:** Mon & Wed 07:45 Europe/Lisbon — scheduled task `trig_014jGd47DXSPKrWD5SaMxt9Z`
   ("HubSpot connection check – #hubspot_updates", fresh session per run)
+- **Slack gate:** when Wilhelm runs this manually, show the post to Billy for approval first. The existing
+  scheduled task runs from its own prompt and still posts directly unless Billy changes it.
 - **Output destination:** Slack #hubspot_updates (C0AHXHC4NRE) — internal, pre-agreed
 
 ## Purpose
