@@ -5,114 +5,199 @@
 :root{--bg:#fff;--fg:#1d1d1f;--mut:#5f6368;--line:#e3e3e6;--acc:#1a5fb4;--chip:#f2f4f7}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17181a;--fg:#e8e8ea;--mut:#a0a3a8;--line:#2e3034;--acc:#7fb0ff;--chip:#222428}}
 :root[data-theme="dark"]{--bg:#17181a;--fg:#e8e8ea;--mut:#a0a3a8;--line:#2e3034;--acc:#7fb0ff;--chip:#222428}
-body{background:var(--bg);color:var(--fg);font:15px/1.55 -apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;padding:24px 16px;max-width:980px;margin-inline:auto}
-h1{font-size:24px;margin:0 0 4px}h2{font-size:19px;margin:30px 0 8px;border-bottom:1px solid var(--line);padding-bottom:4px}h3{font-size:16px;margin:18px 0 6px}
-.sub{color:var(--mut);font-size:13px}a{color:var(--acc)}
-table{border-collapse:collapse;width:100%;font-size:13.5px;display:block;overflow-x:auto}th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{background:var(--chip)}
+body{background:var(--bg);color:var(--fg);font:15px/1.55 -apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0 auto;padding:24px 16px;max-width:900px}
+h1{font-size:24px;margin:0 0 4px}h2{font-size:19px;margin:30px 0 8px;border-bottom:1px solid var(--line);padding-bottom:4px}h3{font-size:16px;margin:18px 0 4px}
+.sub{color:var(--mut);font-size:13px}a{color:var(--acc);word-break:break-word}
 .box{background:var(--chip);border-radius:8px;padding:12px 14px;margin:12px 0}
-.tag{font-size:12px;color:var(--mut)}
+li{margin:3px 0}.st{font-size:12px;font-weight:600;color:var(--mut)}
 </style></head><body>
-<h1>Slack trend scan, 2 to 13 November 2026</h1>
-<p class="sub">Prepared by Wilhelm for Billy, 13 Nov 2026. Read-only scan of Slack (public and private channels Billy can see, DMs and group DMs surfaced by search), compared lightly against 19 Oct to 1 Nov. Focus people: Mila, Nils, Mitya, Yehor, Maryna, Roman, Cátia, Tiago, Kate B.</p>
+<h1>Slack trend scan, 2 to 13 November 2026 (v2, week closed)</h1>
+<p class="sub">Prepared by Wilhelm for Billy, Fri 13 Nov 2026, 21:00 Lisbon. Read-only scan of Slack, including the full working day of 13 Nov. v2 opens about 125 threads with message-level links: every thread with 2 or more replies where a key person posted, replied or was mentioned. Key people: Mila, Nils, Mitya, Yehor, Maryna, Roman, Cátia, Tiago, Kate B. Posts written by their AI agents are labelled as sanctioned by that person. HR and compensation threads are left out on purpose.</p>
 
-<div class="box"><b>Headline.</b> In these two weeks Casafari moved to make the <b>self-serve AI/MCP platform the default product and sales motion</b>:
+<div class="box"><b>Headline.</b> The company is <b>using tokens instead of discounts to move every customer, new and legacy, onto the AI/MCP platform</b>.
 <ul>
-<li>Token plans went live on 6 Nov.</li>
-<li>Mila set the goal that "nobody needs a sales call up to ~€1,500/month", and existing contracts move to the platform at renewal.</li>
-<li>Black Friday was reframed around AI rather than discounts.</li>
-<li>Staff are pushed toward MCP usage and "proactive personalised outreach".</li>
+<li>Self-serve plans went live on 6 Nov.</li>
+<li>Black Friday gives bonus tokens, not price cuts. It brought 456 new organisations in 2 days.</li>
+<li>Sotheby's is being re-priced with a token bonus for each user who activates MCP or the API.</li>
+<li>Web-app users move to usage-based pricing "very soon".</li>
 </ul>
-Running alongside this:
+Mila's line: "if sales doesn't use MCPs and AI agents, sales cannot sell them".<br>
+Around this, three things are forming:
 <ul>
-<li>Price is being defended on legacy accounts (Sotheby's, "we do not give anything just as granted anymore").</li>
-<li>Founders are reviewing tool and infra costs.</li>
-<li>Internal AI agents are spreading fast: agents now post on behalf of Mila, Nils, Tiago, Legal and Maryna.</li>
+<li>Enterprise pricing is consolidating under Nils and Tiago.</li>
+<li>Claude is becoming the company AI stack, but there is no written policy.</li>
+<li>The manual operations load is large: about 70 admin and ops requests in 12 days, plus about 16 legal-heavy inbound requests.</li>
 </ul>
-The friction is concentrated in three places: <b>inbound custom/licensing requests</b>, <b>legal waiting on commercial input</b>, and <b>billing/admin requests handled by hand</b>. All three are good automation candidates.</div>
+That manual load is the clearest automation opportunity.</div>
+
+<h2>What changed vs v1 (13 Nov, 15:30)</h2>
+<ul>
+<li><b>Sotheby's decided in principle (Nils, 13 Nov):</b>
+  <ul>
+  <li>€300 per office per month × 9 offices = <b>€2,700/mo</b>, with all products and 1 Lead Magnet. That is about €8.23 per user and 50% above the €1,800 baseline. The current €450 is a temporary downsell tied to an ERA Portugal introduction that "hasn't happened". The contract ends 31 Dec.</li>
+  <li>AI presentations: 3 per user per month, resetting. Extra packs are €4.90 per 7.</li>
+  <li>Custom template is a separate one-off (e.g. €1,500). The annual prepaid discount of 15–20% is Tiago's call.</li>
+  <li><b>New: a one-time €100 token bonus per user who activates MCP or the REST API</b> (Mila, agreed by Nils).</li>
+  <li>Not sent yet. Ana Lucas and Marcos Pinho are reworking the proposal. Yehor warns a proposal without a conversation "will stuck in a limbo". This replaces Tiago's €8+€2 per user counter.</li>
+  </ul></li>
+<li><b>First Black Friday results</b> (Mila's agent, 13 Nov):
+  <ul>
+  <li>456 new platform organisations in 2 days. Email 1 brought 87 of them from 54,531 recipients (not 66,325). Banners brought 299. Hard bounces were 0.09%.</li>
+  <li><b>HubSpot shows only 16 sign-ups.</b> The real count is in the platform's <code>account_attribution</code> table in BigQuery.</li>
+  <li>A later bot post says 389. This is not reconciled.</li>
+  </ul></li>
+<li><b>Churn, corrected</b> to at least 59 forms in 12 days. API.cat-related forms are 5 from 4 companies: 25% of Spain and about 8% of the total. None cite API.cat after 11 Nov.</li>
+<li><b>Corrections:</b>
+  <ul>
+  <li>"Domain-based verification needs Billy's decision" is wrong. A HubSpot auto-check mis-verified a contact linked to three companies; PR 524 fixes it.</li>
+  <li>The Tomas Bento cancellation flag was stale. He is a live €2,000 MRR customer.</li>
+  <li>#es_monitoring is not fully ignored: 14 zero-photo alerts got a reaction from data collection, but there are no written replies.</li>
+  <li>Every #data_issues ticket was answered, with a median of 5–22h.</li>
+  <li>The founders' and #portugal channel labels in v1 were swapped.</li>
+  </ul></li>
+<li><b>Resolved this week:</b>
+  <ul>
+  <li>Trovara (decided).</li>
+  <li>Homes CS combined reply, approved by Cátia on 13 Nov. Most sources say Yehor sent it, one says not yet.</li>
+  <li>Smaller items: invoice PDF 502, the free-plan 422 errors (one bug), Smartlink hide-location, the C21 Safari iframe and the Atlantic Pisos feed.</li>
+  </ul></li>
+<li><b>Reversed:</b>
+  <ul>
+  <li>"Claro in every plan" became Claro Start and Claro AI as separate plans.</li>
+  <li>Customer-facing pages now need screenshots plus Mila's approval.</li>
+  </ul></li>
+</ul>
 
 <h2>1. Direction the company is taking</h2>
-<table><tr><th>Signal</th><th>Evidence (fact)</th><th>What it means (inference)</th></tr>
-<tr><td><b>"Become a technological company in everything we do"</b></td><td>Mila in #all-hands, 6 Nov: "we MUST become a technological company… focus MUCH MORE on future, on new bets". The People team echoed it on 9 Nov. Mila's MCP leaderboard says "team should be leading this board". <a href="https://casafari.slack.com/archives/C143HUBD3/p1794219392511349">link</a> · <a href="https://casafari.slack.com/archives/C143HUBD3/p1793988860675199">link</a></td><td>Incentives and expectations are moving to MCP/AI usage, including for Sales and AMs.</td></tr>
-<tr><td><b>Self-serve by default for the mid-market</b></td><td>Platform plans live 6 Nov: Free, Agent €49, Agency €249 (10k tokens), Business €990 (50k tokens). Mila, 4 Nov: "nobody needs a sales call" up to about €1,500/mo, and existing contracts move to the platform "at renewal by default". There were 5+ plan revisions in 10 days (4 plans became 3).</td><td>Sales headcount gets concentrated on bespoke data, SLAs and large accounts. Web-app cannibalisation has started: the first web-app user moved to Platform only at €19.99, and the first DE churn form cites moving to MCP.</td></tr>
-<tr><td><b>Sales motion: outreach and referral</b></td><td>Yehor, 11 Nov: "switch all Customer Facing team members for proactive personalised outreach". Invite links, HubSpot sync and +150 tokens for invitees are under way. On 13 Nov: "Our standard trials are usage-based".</td><td>RevOps tooling (invite links, HubSpot sync, attribution) becomes critical path.</td></tr>
-<tr><td><b>Product-led campaigns, not discount-led</b></td><td>Mila, 9 Nov: Black Friday should "promote the platform and what AI can do with our data" and "I do not believe in selling the same as 4 years ago". The list was widened to 66,325 contacts, including ApiCat and C21 users. Maryna: no paid ads ("not efficient").</td><td>Marketing is centralised in PMM and runs on owned channels (email, in-app banners).</td></tr>
-<tr><td><b>Defend price on legacy and large accounts</b></td><td>Mila, 11 Nov on Sotheby's: "we do not give anything just as granted anymore". Nils, 13 Nov, working proposal: €300 per office per month (9 offices, 328 users, €2,700/mo, +50% vs €1,800), down from "too many separate items". Tiago countered with €8 + €2 per user (€3,280/mo). Mila wants agreed principles first for "iad of this world or a christies". <a href="https://casafari.slack.com/archives/GJWLX7M2R/p1794580929216119">link</a> · <a href="https://casafari.slack.com/archives/C0B3J6YBEP4/p1794575335800169">link</a></td><td>A per-office enterprise pricing principle is forming. It belongs in the 2027 price book.</td></tr>
-<tr><td><b>Partnership-led volume in Spain (API.cat)</b></td><td>The minimum is 3,500 licences × €2.50 = €8,750/mo, non-exclusive. Mila, 11 Nov: the potential churn "was miscalculated by us", because API.cat includes agents inside C21, KW, CB and E&amp;V, and the ask is "sell more accounts, this time make effort for real". Cancellation is treated as 30-day notice. Novena bis sets a price floor on direct sales.</td><td>AMs in Spain shift from retention to growing the integration companies. The price floor may conflict with direct discounts (Black Friday, Sotheby's-style deals in ES).</td></tr>
-<tr><td><b>Cost discipline</b></td><td>Google Cloud is up about €9k month on month (Mila: new countries, reprocessing, dedup, Elasticsearch). Mitya cancelled his own JetBrains seats. €1.1k/mo of consulting/PR was flagged as unused. France LoopNet and Bureaux Locaux were switched off for proxy cost. New-country data (NL, HU) only "if it is binding". <a href="https://casafari.slack.com/archives/C0CCBAVTHRB/p1794321638063339">link</a></td><td>Cost is reviewed at founder level. Expect pressure on proxy, cloud and SaaS seats. Your data-ops cost model is directly relevant.</td></tr>
-<tr><td><b>AI governance catching up</b></td><td>Legal asked 12 Nov for direction on AI tools (mandatory or optional, training, personal accounts, a Sales Claude org). Tiago: "we need to write an AI policy", and OpenAI is "the least compliant option". Yehor: "I'll start with shared accounts in Claude for CF teams". A Claude outage of about 18h on 13 Nov halted agent-driven work. <a href="https://casafari.slack.com/archives/C07PFCLQE6S/p1794493371245669">link</a></td><td>Claude is the de-facto standard, and single-vendor dependence is now an operational risk. A policy is pending.</td></tr>
-</table>
+<h3>1.1 Tokens instead of discounts, everywhere</h3>
+<ul>
+<li>Black Friday: Mila said "Let us start promoting what AI can do", and skip discounts because "we are moving existing app users to usage-based pricing very soon". The offer is +30% tokens to 23 Nov and +25% from 24–30 Nov, with prices unchanged. Germany gets a separate hook. <a href="https://casafari.slack.com/archives/C08SZ5Z3DHU/p1793959209133989">thread (34 replies)</a></li>
+<li>Sotheby's gets a €100 token bonus per activating user. Referral invites earn +150 tokens. Unused web-app value converts to tokens at €0.04. That makes 4 cases of tokens used as the incentive. <a href="https://casafari.slack.com/archives/C0C92GC8H2Q/p1794487933599489">web-app to platform</a> · <a href="https://casafari.slack.com/archives/C0C92GC8H2Q/p1794418411186649">referral</a></li>
+<li>Yehor: keep discounts for acquisition and counter-offers; the "main focus should be new products".</li>
+</ul>
+<h3>1.2 "Become a technological company"; sales must use what it sells</h3>
+<ul>
+<li>Mila, #all-hands 6 Nov (36 replies): "we MUST become a technological company in everything we do", "focus MUCH MORE on future, on new bets". <a href="https://casafari.slack.com/archives/C04B8FURNDS/p1793965201679779">thread</a></li>
+<li>Mila (via her agent), 9 Nov: "if sales doesn't use MCPs and AI agents, sales cannot sell them". <a href="https://casafari.slack.com/archives/C0B3J6YBEP4/p1794214805392749">link</a> On Sotheby's: "we miss the bridge to the futureproof product offering". <a href="https://casafari.slack.com/archives/GJWLX7M2R/p1794589375272329?thread_ts=1794420181.696079">link</a></li>
+<li>Yehor: all customer-facing staff move to "proactive personalised outreach" with referral links, "Be ready for 2027".</li>
+<li>Roman: a coding agent "doesn't replace an engineer". Mitya: JetBrains is "not a replacement" for Claude. Engineering is sceptical of the push without blocking it.</li>
+</ul>
+<h3>1.3 Self-serve platform as the default, with an enterprise token ladder on top</h3>
+<ul>
+<li>Plans have been live since 6 Nov, with 6+ revisions in 9 days. The <a href="https://casafari.slack.com/archives/C0C92GC8H2Q/p1793990976171699">release thread</a> has 47 replies. Mila, 4 Nov: "nobody needs a sales call" up to about €1,500/mo, and contracts migrate "at renewal by default".</li>
+<li>Enterprise tiers (approach decided, build open): 500k / 2M / 5M tokens a year, bank transfer above about €3k, net 30 after a first paid invoice. Yehor will bring customers using 50k+ tokens. <a href="https://casafari.slack.com/archives/C0C92GC8H2Q/p1793980502515749">thread</a></li>
+<li>Mila: "API and MCP can be and should be blended" (she rejected a 2-tab split). <a href="https://casafari.slack.com/archives/C0C92GC8H2Q/p1794229987891999">link</a></li>
+<li>Mixed messages: on 12 Nov #general said MCP is "only Spain and Portugal". On 13 Nov Yehor said it is "not limited by country".</li>
+</ul>
+<h3>1.4 Price defence and pricing authority</h3>
+<ul>
+<li>On legacy and large deals Nils sets the price, Mila shapes the strategy and Tiago acts as the guardrail. Yehor handles small deals. There is <b>no written approval matrix</b>. Mila's question about principles for "iad of this world or a christies" is still unanswered. <a href="https://casafari.slack.com/archives/C0B3J6YBEP4/p1794567850968329">leadership DM</a></li>
+<li>API.cat: Mila says "the potential churn was miscalculated by us", because API.cat members include agents inside C21, KW, CB and E&amp;V. Her ask is to "sell more accounts" and drive adoption of products outside All-in-One. Her question "what if KW Girona cancels to join APICAT" is open. Cancellation counts as 30-day notice; Mila decided this over Ana Fernandes' proposal of an extra month. <a href="https://casafari.slack.com/archives/C0B3J6YBEP4/p1794336588452359">thread</a> · <a href="https://casafari.slack.com/archives/C05MTLV1VCH/p1794324170814629">policy</a></li>
+<li>Legal's API.cat summary flags the Novena bis price floor on direct sales to new clients, and discounts and free months count toward it. You weren't tagged on that thread. <a href="https://casafari.slack.com/archives/C07PFCLQE6S/p1794319363124229">thread</a></li>
+</ul>
+<h3>1.5 Cost discipline and cash</h3>
+<ul>
+<li>Tiago (#all-hands, 5 Nov): the finance update moves to the start of the year, toward a "cash flow break even milestone".</li>
+<li>Specific cost moves:
+  <ul>
+  <li>Google Cloud invoice up about €9k; the thread has no replies. <a href="https://casafari.slack.com/archives/C0CCBAVTHRB/p1793700464693619">link</a></li>
+  <li>JetBrains seats trimmed. <a href="https://casafari.slack.com/archives/C0CCBAVTHRB/p1794306126556749">link</a></li>
+  <li>Yehor's "clean the house before 2027": €1.1k/mo consultant plus PR agency, and no contract found for the ABINI association. No cuts decided yet. <a href="https://casafari.slack.com/archives/C0B3J6YBEP4/p1794328805277259">link</a></li>
+  </ul></li>
+<li>Data sources: 3 switch-offs for cost (LoopNet, Bureaux Locaux, cwproprius). 4 new-country asks are gated by Mila's "only if it is binding": Housing Anywhere NL/HU (~€5.4k ARR, awaiting Mila), Little Caesars UK/TR/SA (€12k ARR), and others. Mila is also weighing GPU servers off GCP for agentic data collection. <a href="https://casafari.slack.com/archives/C0583M9JB2P/p1793963557089219">NL/HU</a> · <a href="https://casafari.slack.com/archives/C0583M9JB2P/p1794494450754519">cwproprius</a></li>
+<li>No headcount signals were visible.</li>
+</ul>
+<h3>1.6 Claude as the company AI stack, policy pending</h3>
+<ul>
+<li>Yehor, 13 Nov: "I'll start with shared accounts in Claude… Demos will be in Claude". Tiago: OpenAI is "least compliant", and multiple Claude orgs are possible. Mariana's policy questions (mandatory or optional, training, personal accounts) are unanswered, and <b>no one owns the policy draft</b>. <a href="https://casafari.slack.com/archives/C07PFCLQE6S/p1794493371245669">thread</a></li>
+<li>The agent fleet is now part of how the company runs:
+  <ul>
+  <li>Mila presents her agents as team members to All Hands and to the board.</li>
+  <li>CS copilot: 89% on 312 questions. It opens to customers at 90%, and Paula Piza owns it from 16 Nov. <a href="https://casafari.slack.com/archives/C0C92GC8H2Q/p1794586541770879">link</a></li>
+  <li>OG-Agent answers BI requests. A Data Requests AI bot requires a second human approver.</li>
+  <li>Data QA is going agent-first.</li>
+  </ul></li>
+<li>Risk: a Claude/connector outage of about 18h on 13 Nov halted agent-driven work.</li>
+</ul>
 
 <h2>2. New initiatives and trends</h2>
-<table><tr><th>Topic</th><th>Status vs prior 2 weeks</th><th>Notes</th></tr>
-<tr><td>Platform token plans, Terms v1.5, referrals and invite links</td><td><b>New</b> (live 6 Nov)</td><td>First real payment and refund tests 9 Nov. Terms 7.2(d), the plan cards and the Claro pages drifted out of sync several times.</td></tr>
-<tr><td>Mila's 2 Nov launches: AgencyGraph (ES/PT, next IT/DE/AT/PL/GR), Private Seller Leads (~€0.40 per 50 homes), 27 Playbooks priced per run (€2.20–10)</td><td><b>New</b></td><td>Theme: "sell all of Casafari" through the client's own Claude or ChatGPT.</td></tr>
-<tr><td>"Datasets" (Data Export plus webhooks merged)</td><td><b>New</b> (proposed 5 Nov)</td><td>Mila: "Nothing is built". Kate: Data Export "cannot move to the platform as it is". Webhooks return "next week" without billing metering. Engineering knowledge is concentrated in one person.</td></tr>
-<tr><td>ChatGPT Directory plugin</td><td><b>New</b> (in OpenAI review since 5 Nov)</td><td>Distribution beyond Claude.</td></tr>
-<tr><td>Internal agent fleet: Mira, Opusik, OG-Agent (Mila); Themis (Legal, from 6 Nov); Tiago's agent; Mary (Maryna); Mia (People); CS copilot on casafari.com</td><td><b>Rising fast</b></td><td>OG-Agent now answers #bi_requests (in test). Retention, data-QA, BI and email agents are in the pipeline. Paula returns Monday to own and train the copilot.</td></tr>
-<tr><td>Black Friday reframed around AI/MCP</td><td><b>Rising</b> (prior window: one 25% mention)</td><td>Launched 12 Nov. Codes BLACKFRIDAY30 to 23 Nov and BLACKFRIDAY25 24–30 Nov. Landing pages in 6 languages, banners in the web app, mobile app and console. No results yet. For reference, the AI Presentation Builder email had 41% opens.</td></tr>
-<tr><td>API.cat reseller deal</td><td><b>Escalated</b> (5 light hits 28–29 Oct, now dominant in ES)</td><td>Founder-level analysis, legal summary and a churn policy.</td></tr>
-<tr><td>AI tool policy / Claude as company vendor</td><td><b>New</b> (12 Nov)</td><td>Legal is waiting on direction from Yehor and you.</td></tr>
-<tr><td>Customised AI Presentation templates for large accounts</td><td><b>New</b> (4 requests)</td><td>There is no price for customisation yet.</td></tr>
-<tr><td>Web app + platform bundle; count endpoint</td><td><b>New</b> (12 Nov)</td><td>Zero-result searches still burn tokens, so a count endpoint is being discussed.</td></tr>
-<tr><td>MCP OAuth redirect_uri 400 (Claude Code / Codex)</td><td><b>New bug</b></td><td>Loopback redirects must ignore the port (RFC 8252). Affects Rive (churned, €1,000) and RE/MAX Inmomas (€610.5). Small fix.</td></tr>
-<tr><td>DORA flow-down contracts, C21 DPA</td><td>Rising, not new</td><td>Khome has been open about 3.5 months. Cátia: "not much flexibility".</td></tr>
-<tr><td>Greece and Eastern Europe coverage</td><td>Emerging</td><td>First RE/MAX GR upsell. AgencyGraph roadmap includes PL and GR. #es_monitoring alerts are heavy for GR and PL.</td></tr>
-</table>
-
-<h3>Market read (from #sales-closed-wons and the churn channels)</h3>
 <ul>
-<li><b>Portugal:</b> high volume, low ticket. About 42 of 74 closed-won posts, many €28 self-serve sign-ups. Also the largest churn source (25 of 54 forms, mostly closing businesses or short-term use).</li>
-<li><b>Spain:</b> deals of €100–150. API.cat disruption and 19 churn forms. Only <b>4</b> forms explicitly cite API.cat, Colegio de APIs or "Apiplataforma".</li>
-<li><b>Italy:</b> upsell-led (Valuation ARPU up to €10).</li>
-<li><b>France and Germany:</b> thin (2 and 1 closed-won) with many stale deals. 415 stale open deals overall.</li>
-<li><b>New-business MRR:</b> median about €35, range €15–260.</li>
-</ul>
-<p class="tag">Correction to this morning's catch-up: the share of churn citing API.cat is smaller than "~11 forms citing ApiCat" suggested. The 12-day total is 54 forms, of which 4 are API.cat-related.</p>
-
-<h2>3. Recurring issues and requests: automation candidates</h2>
-<p class="sub">Ranked by volume × time saved × risk reduced. Effort: S = days, M = 1–3 weeks.</p>
-<table><tr><th>#</th><th>Recurring issue</th><th>Frequency (2–13 Nov)</th><th>Handled today by</th><th>Proposed automated handling</th><th>Effort</th></tr>
-<tr><td>1</td><td><b>Inbound custom / licensing requests</b> (commercial@, platform@, custom request form)</td><td>About 12–14. At least 6 ask the same "can we display, store or resell data / get seller contacts" question (Agens, SeenWorth, Getbuild.pl, VALCI, RE/MAX Insieme…). Homes CS sent 5 emails in one night.</td><td>Mila's agents triage; Yehor and Kate answer; you and Cátia set terms. Several have no reply (Agens, Getbuild).</td><td>A standard third-party-use answer plus FAQ, approved once by Legal. An intake form, then auto-create the HubSpot contact, company and deal, then an owner rule with an SLA and a daily digest of unanswered requests. Mila already floated an "email reply assistant".</td><td>S + M</td></tr>
-<tr><td>2</td><td><b>Churn forms</b></td><td>54 (about 4.5/day). PT 25, ES 19, IT 6, FR 3, DE 1. Reasons: about 55% closing business or low use, 15% no results or price, 10% alternative, 7% API.cat.</td><td>AMs, by hand. No visible thread replies.</td><td>A HubSpot workflow that classifies the reason, routes by market and value, applies the API.cat 30-day-notice template automatically, and sends a weekly reason/MRR report. Low-value closing-business forms get an automatic offboarding path.</td><td>M</td></tr>
-<tr><td>3</td><td><b>Legal waiting on commercial or technical input</b></td><td>4 threads (Khome DORA about 3.5 months, Trovara, REMAX, Homes privacy) plus the AI-policy ask.</td><td>Cátia and Themis chase by hand.</td><td>A contract-review intake with an owner and due date, plus a weekly digest of open legal asks to you and Yehor. Wilhelm could run this digest (read-only).</td><td>S</td></tr>
-<tr><td>4</td><td><b>Billing admin requests to engineering</b> (cancel or expire company, 50-account limit, invoice number, expired leadgen, report download)</td><td>5 in 4 days, all from Ana Fernandes</td><td>Engineering, by hand in Tools admin</td><td>Self-serve admin actions for billing ops, with a request form for the rest.</td><td>M</td></tr>
-<tr><td>5</td><td><b>Invoicing flow (Invopop / Stripe)</b></td><td>At least 4 incidents (PDF 502, no credit note after refund (PLTF-1027), not marked paid, slowness)</td><td>Finance and engineering</td><td>Refund webhook creates the credit note; mark paid on Stripe success; latency alert.</td><td>M</td></tr>
-<tr><td>6</td><td><b>Unacknowledged monitoring</b> (#es_monitoring, HubSpot rep check, deal hygiene)</td><td>About 246 #es_monitoring alert blocks (DE 76, GR 47, PL 39, PT 31…) with no human reply. The same 2 reps flagged 8 times. 415 stale deals, plus 42 PT deals without an active owner.</td><td>Nobody (alerts only)</td><td>Ack/owner rules: escalate to an owner when nobody acknowledges within 24h; escalate to the manager after 5 days; auto-reassign ownerless deals.</td><td>S</td></tr>
-<tr><td>7</td><td><b>Ad hoc pricing and proposal requests</b> (Sotheby's, template customisation ×4, €1 trial contract, Valuation upsell)</td><td>About 7</td><td>Yehor, Tiago and Nils, same day, via Slack/DM</td><td>An approval form in HubSpot with thresholds from the 2027 price book, plus a template-customisation price list.</td><td>M</td></tr>
-<tr><td>8</td><td><b>GDPR deletion / data-subject requests</b></td><td>At least 5</td><td>CS to Legal and tech, case by case</td><td>A single deletion form with Legal triage and a standard response.</td><td>M</td></tr>
-<tr><td>9</td><td><b>Audience and list requests to you</b></td><td>6 (3 in channel, 3 by DM), turnaround about 1 day</td><td>You and Billience, by hand</td><td>Saved HubSpot segments per audience plus a campaign-audience request form. Pairs with Maryna's new rule: "all planned email communications must be aligned… before being scheduled".</td><td>S–M</td></tr>
-<tr><td>10</td><td><b>Customer-facing product friction</b> (free-plan sourcing failures, Smartlink issues, device limit and 3h token limits during demos, C21 escalations)</td><td>About 3–4 + 4 + several + 6</td><td>CS, Kate, engineering</td><td>Surface the upstream error and request id in the console; self-serve device reset; a C21 issue tracker with SLA.</td><td>S each</td></tr>
-<tr><td>11</td><td><b>Seats, licences and vendor balances</b> (JetBrains, Claude orgs, Atlassian offboarding, einforma out of credit, Postmark plan)</td><td>About 6</td><td>Tiago and Roberto</td><td>A quarterly seat-audit bot, an offboarding checklist, and balance monitors.</td><td>S</td></tr>
-</table>
-
-<h2>4. What this means for you</h2>
-<ul>
-<li><b>Decisions waiting on you:</b>
+<li><span class="st">NEW</span> <b>Platform token plans + Terms v1.5 + referral/invite links</b>: plans are live, referral links are being built. The HubSpot product "Casafari Platform" and a deal stage were requested on 5 Nov, still open.</li>
+<li><span class="st">NEW</span> <b>Usage-based pricing for existing app users</b>: announced as "very soon". The bundle will be designed after 5–10 manual cases.</li>
+<li><span class="st">NEW</span> <b>Enterprise token ladder</b>: approach decided.</li>
+<li><span class="st">NEW</span> <b>Mila's 2 Nov launches</b>: AgencyGraph, Private Seller Leads and 27 per-run Playbooks.</li>
+<li><span class="st">NEW</span> <b>ChatGPT Directory plugin</b>: in OpenAI review.</li>
+<li><span class="st">NEW, OPEN</span> <b>"Datasets"</b> (Data Export + webhooks): Kate: "Need to discuss this by voice". Webhooks were promised to customers for "next week", but billing for them isn't built, and the work depends on a single engineer. <a href="https://casafari.slack.com/archives/C0C92GC8H2Q/p1793891415552779">thread</a></li>
+<li><span class="st">NEW</span> <b>Count endpoint, and empty searches made free</b> (PR 526): decided. <a href="https://casafari.slack.com/archives/C0C96PNLUE8/p1794494060047409">thread</a></li>
+<li><span class="st">RISING</span> <b>Agent fleet</b>: copilot, OG-Agent, Themis, Tiago's agent, Mary, a data-quality agent.</li>
+<li><span class="st">RISING</span> <b>Black Friday as the first "platform" campaign</b>: email 2 on 19 Nov. It collided with Marcos Pinho's 1:1 MCP outreach to about 20 clients: about 1,200 of 2,157 decision-makers already got email 1. Maryna set a new rule that "all planned email communications must be aligned". Yehor called an alignment meeting for <b>Mon 16 Nov</b>. <a href="https://casafari.slack.com/archives/C080EM6H32T/p1794569060044339">thread</a></li>
+<li><span class="st">ESCALATED</span> <b>API.cat</b>: 12 threads and 13 people (v1 counted 7 and 7).
   <ul>
-  <li>the standard third-party data-use answer (Agens, Getbuild, VALCI and others);</li>
-  <li>whether domain-based verification is safe for shared franchise domains (e.g. remax.pt);</li>
-  <li>Trovara and Khome input to Legal;</li>
-  <li>AI-policy direction (with Yehor);</li>
-  <li>Sotheby's pricing principle;</li>
-  <li>Yehor's request for platform stats and HubSpot-matching access, and the missing commercial@ digest posts;</li>
-  <li>the "Casafari Platform" product in HubSpot, requested 5 Nov (status not checked).</li>
+  <li>DM-permission bug: asked 4 times (5–12 Nov); Demian is on "a permanent scalable solution", with no ETA or owner. 6 deals are affected and one €4,800 ARR churned because members get the platform free via API.cat.</li>
+  <li>API.cat/IAD SSO hold bug: 156 companies and 24 agents affected; Kate's business question has no answer. <a href="https://casafari.slack.com/archives/C080EM6H32T/p1793812942502419">thread</a></li>
   </ul></li>
-<li><b>Price book 2027:</b> add the per-office enterprise principle, platform-migration-at-renewal rules, the API.cat price floor and how it interacts with direct discounts, and a customisation price list.</li>
-<li><b>Commissions:</b> ownership and commission rules for accounts migrating to the platform or API.cat are undefined. This is a process gap, and individual cases were deliberately not recorded here.</li>
-<li><b>Quick wins Wilhelm could run</b> once you approve, at L1: a weekly churn-reason report, a weekly legal-asks digest, a daily unanswered-inbound-requests digest, and an ack check on monitoring alerts. All would be drafts to you first.</li>
+<li><span class="st">NEW</span> <b>AI tool policy</b>: see 1.6.</li>
+<li><span class="st">NEW</span> <b>Trial governance</b>: "standard trials are usage-based"; a trial is on hold until training is done (21-reply thread). <a href="https://casafari.slack.com/archives/C016GRLBSN5/p1794581730426889">thread</a></li>
+<li><span class="st">NEW</span> <b>AI used on CRM data</b>: Maxime Hueber's assistant mass-closed 107 stale FR deals, which is why FR stale deals fell 94 → 22.</li>
+<li><span class="st">RISING</span> <b>DORA / DPA compliance</b>: Khome has been open 112 days (small €420/mo deal, but Cátia says its value goes "beyond MRR"). <a href="https://casafari.slack.com/archives/C07PFCLQE6S/p1784887120655059">thread</a> The C21 commercial agreement gates C21's Portal Listing Resolve request.</li>
+</ul>
+<p class="sub"><b>Market read:</b> Portugal is high-volume and low-ticket (about 42 of 74 closed-won posts, and the largest churn source, mostly businesses closing). Spain is €100–150 deals under API.cat pressure. Italy is upsell-led (Valuation ARPU up to €10). France and Germany are thin. Stale deals: ES 226 → 149, FR 94 → 22, total 415.</p>
+
+<h2>3. Recurring work: automation candidates (ranked)</h2>
+<ol>
+<li><b>Ops and admin tickets in #tools-support: about 48 in 12 days</b>
+  <ul>
+  <li>13 device-limit blocks, all marked "Urgent".</li>
+  <li>12 €1-contract or trial activations, plus 4 trial resets.</li>
+  <li>5 Smartlink email changes and 5 deletions.</li>
+  <li>Plus about 5 billing-admin threads in #tech_finance_issues and about 22 leadgen links cancelled by hand.</li>
+  </ul>
+  <i>Handling:</i> a self-serve device reset, trial and €1-contract activation by rules under the usage-based trial policy, and a billing-ops admin panel. <i>Effort:</i> S–M. <b>Highest volume.</b></li>
+<li><b>Inbound custom and licensing requests: about 16.</b> Yehor: "Most of the questions we receive… are legal". Getbuild.pl (8 legal questions), Denk, Dario, SeenWorth and VALCI have no visible reply. The platform@ CC rule is now set.<br><i>Handling:</i> one Legal-approved third-party-use answer plus an FAQ fed into the CS copilot; an intake form that creates the HubSpot contact, company and deal; an owner rule with a deadline and a daily unanswered digest. <i>Effort:</i> S + M.</li>
+<li><b>Legal waiting on commercial input: 6 asks.</b> Replies range from 1 minute to 9 days (REMAX), and Khome has waited 112 days.<br><i>Handling:</i> a contract-review intake with an owner and due date, plus a weekly legal-asks digest. <i>Effort:</i> S.</li>
+<li><b>Churn forms: at least 59</b> (PT ~26, ES 20, IT 9, FR 3, DE 1). About 55% are closing businesses or low use; API.cat is about 8%.<br><i>Handling:</i> a HubSpot workflow that classifies the reason, routes by market and value, applies the API.cat 30-day template, and produces a weekly reason/MRR report. <i>Effort:</i> M.</li>
+<li><b>Pricing, discount and trial approvals: 7+ deals plus 6 finance approvals</b>, all informal via Slack and DM.<br><i>Handling:</i> an approval matrix in the 2027 price book (who approves what, above which amount) and a HubSpot approval form; per-office enterprise principles; a customisation price list. <i>Effort:</i> M.</li>
+<li><b>Invoicing flow: 5 incidents.</b> The open one is PLTF-1027: no Invopop credit note after a refund (26-reply thread, manual vs automatic still unanswered). Payment terms are "a finance decision first".<br><i>Handling:</i> a refund webhook that creates the credit note, mark invoices paid on Stripe success, and an alert when Invopop slows. <i>Effort:</i> M.</li>
+<li><b>Campaign and list requests: 19 BI requests plus the audience thread, and at least 4 email collisions.</b><br><i>Handling:</i> saved HubSpot segments, a campaign intake form plus a shared send calendar (in line with Maryna's alignment rule), and Black Friday attribution from BigQuery <code>account_attribution</code> instead of HubSpot. <i>Effort:</i> S–M.</li>
+<li><b>Monitoring and hygiene: #es_monitoring delay and volume reports have no human ack. HubSpot rep check flags the same 2 reps (8×). 415 stale deals, 42 PT deals without an owner.</b><br><i>Handling:</i> an ack/owner rule with escalation, manager escalation after 5 days, and automatic reassignment of ownerless deals. Maxime's agent showed bulk-closing stale deals works. <i>Effort:</i> S.</li>
+<li><b>Data-error tickets: about 20, all answered (median 5–22h).</b> PT overmatching dominates; 3 FR clients complain they can't correct AI-generated fields.<br><i>Handling:</i> the data-quality agent (already being onboarded) triages by market and type. <i>Effort:</i> M.</li>
+<li><b>GDPR deletions: 4 formal requests plus 1 listing removal</b>, closed in 1–3h. Ilya's question "are we legally required to delete everything?" has no Legal answer.<br><i>Handling:</i> a deletion form with a standard legal answer. <i>Effort:</i> S.</li>
+<li><b>Seats and vendor balances</b> (JetBrains, Claude orgs, einforma credit, Postmark plan): about 6.<br><i>Handling:</i> a quarterly seat audit and balance monitors. <i>Effort:</i> S.</li>
+</ol>
+
+<h2>4. What this means for you on Tuesday</h2>
+<ul>
+<li><b>Waiting on you in threads:</b>
+  <ul>
+  <li>Khome DORA (112 days) and REMAX for Legal.</li>
+  <li>The standard third-party data-use answer (Getbuild, Denk, Dario, SeenWorth, VALCI).</li>
+  <li>The HubSpot "Casafari Platform" product and deal stage (asked 5 Nov).</li>
+  <li>An owner for the API.cat DM-permission bug.</li>
+  <li>The C21 commercial agreement, which gates their Resolve request.</li>
+  <li>Yehor's request for platform stats and HubSpot-matching access.</li>
+  </ul></li>
+<li><b>Worth reading:</b> Legal's API.cat summary (price floor; you weren't tagged), and the Sotheby's decision before the proposal goes out.</li>
+<li><b>Mon 16 Nov:</b> Yehor's Black Friday vs 1:1 outreach alignment meeting. Paula takes over the CS copilot.</li>
+<li><b>Price book 2027:</b> add the per-office enterprise principle, the token-bonus mechanics, the enterprise token ladder, the API.cat floor rule, an approval matrix and the customisation price list.</li>
+<li><b>Data:</b> Black Friday attribution belongs in BigQuery (<code>account_attribution</code>), not HubSpot. 456 vs 389 needs reconciling. I can do this read-only.</li>
+<li><b>Process gap:</b> commission and ownership rules for accounts migrated to the platform or API.cat (individual cases omitted).</li>
+<li><b>Quick wins Wilhelm can run, as drafts to you</b> (needs L1): a weekly churn-reason report, a weekly legal-asks digest, a daily unanswered-inbound digest, a #tools-support ticket-type report, a monitoring-ack check, and Black Friday attribution from BigQuery.</li>
 </ul>
 
 <h2>Method and coverage</h2>
 <ul>
-<li><b>How it was run:</b> five parallel read-only sweeps (leadership, commercial, product/API, legal/finance, marketing/data). For each key person a <code>from:</code> search covered the window; channels were read from 2 Nov, and substantive threads were opened. The prior-window comparison used light keyword checks only.</li>
-<li><b>Authorship:</b> many posts under Mila's and Nils's names are written by their agents. They are treated as founder-sanctioned. Tiago's posts are often agent-signed. Bot-only posts (Themis, Mira, OG-Agent, Billience, monitors) were not counted as human initiatives.</li>
-<li><b>Gaps:</b>
+<li><b>How v2 was run:</b> five read-only slices (leadership, commercial, product/API, legal/finance, marketing/data). About 125 threads opened with <code>slack_read_thread</code>. v1 files were extended, not redone, and 13 Nov was re-read through to the evening.</li>
+<li><b>Times:</b> Slack displays UTC−3, so add 3h for Lisbon.</li>
+<li><b>Authorship:</b> many posts under Mila's, Nils's and Tiago's names are written by their agents; they are treated as sanctioned by that person.</li>
+<li><b>Remaining gaps:</b>
   <ul>
-  <li><b>Partial searches:</b> Kate's and Tiago's <code>from:</code> searches were partly paged, and Mila's last page (around 2 Nov) wasn't read.</li>
-  <li><b>Threads not opened:</b> the 36-reply #all-hands thread and the 34-reply Black Friday thread.</li>
-  <li><b>Channels covered by search only:</b> #spain, #portugal, #french-team, #italian_sales, #bi_requests, #marketing_*, #delete_accounts, #tools-support and the country data channels.</li>
-  <li><b>Links and counts:</b> some rows only have channel-level links. Counts are approximate (±10%). Response times couldn't be measured.</li>
+  <li>Partly paged searches: Yehor (pages 4+) and Kate (page 3).</li>
+  <li>Threads not opened: about 7 leadership threads (e.g. platform stats, 15 replies) and #tools-support replies.</li>
+  <li>Not fully recounted: PT and IT churn.</li>
+  <li>Smaller data channels not read.</li>
+  <li>The prior-window comparison used keyword checks only.</li>
+  <li>Counts are about ±10%. Some links point at the thread rather than the reply.</li>
   </ul></li>
-<li><b>Excluded:</b> individual-performance and compensation discussions, by design.</li>
+<li><b>Left out on purpose:</b> HR and compensation threads, individual commission cases, and API.cat contract figures beyond what's already in Billy's tracker.</li>
 </ul>
 </body></html>

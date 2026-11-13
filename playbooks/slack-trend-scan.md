@@ -1,7 +1,7 @@
 # Playbook: Slack trend & direction scan
 
 - **Autonomy level:** L0 (new, 2026-11-13); see `_registry.md`
-- **Cadence:** ad hoc. **Last run:** 2026-11-13, window 2–13 Nov. Doc: https://docs.google.com/document/d/1RTMRtS-gRIXO89BundRvRszv5ZXNP3qeDPU5zxGC9i0/edit (HTML copy in `reports/`)
+- **Cadence:** ad hoc. **Last run:** 2026-11-13 v2 (week closed, ~125 threads), window 2–13 Nov. Doc: https://docs.google.com/document/d/1RTMRtS-gRIXO89BundRvRszv5ZXNP3qeDPU5zxGC9i0/edit (HTML copy in `reports/`)
 - **Output destination:** Google Doc in Billy's Drive plus an HTML version (no personal names in anything shared beyond Billy)
 
 ## Purpose
@@ -40,3 +40,9 @@ Tiago (Finance) · Kate B (Data & API).
 - Slack search results often lack per-message permalinks. Ask the agents for `ts` values to rebuild them.
 - Many founder posts are written by agents (Mila: Mira/Opusik/OG-Agent; Nils [BOT]; Tiago's agent signature). Label them as founder-sanctioned.
 - Reconcile counts across slices. The catch-up sweep said "~11 forms citing ApiCat", but the full read found 54 churn forms in 12 days, only 4 of them ApiCat-related.
+
+## Lessons from run 2 (v2, 2026-11-13 evening)
+- A thread-depth pass changed conclusions: Sotheby's was decided, the domain-verification ask was void, a cancellation flag was stale, #es_monitoring had reactions, and every #data_issues ticket was answered. **Never report "no reply" from search snippets alone; open the thread.**
+- Read #tools-support. It holds the largest manual ops load (~48 tickets in 12 days).
+- Slack shows UTC−3, so add 3h for Lisbon. Channel IDs: GJWLX7M2R = #portugal, C0B3J6YBEP4 = leadership group DM, C0C92GC8H2Q = #platform-api-mcp, C0C96PNLUE8 = custom requests, C07PFCLQE6S = #revsquad_and_legal.
+- Update the Doc in place with `tools/html2docreq.py` (HTML → Docs batchUpdate), run by a sub-agent so the large JSON stays out of the main context. Copy the script into the repo if it's reused.

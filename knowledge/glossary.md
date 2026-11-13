@@ -54,3 +54,5 @@
 ## Internal agents
 - **Billience** — Billy's audience-list assistant (#audience-requests). **Mira** — Mila's bot.
   **Themis** — Legal's agent. **Mary by Claude** — Maryna's assistant.
+- **Novena bis** — API.cat contract clause: price floor on direct sales to new clients (≤ €2.50/user is barred; discounts/free months count).
+- **Token bonus** — Casafari's 2026 incentive instrument instead of discounts (Black Friday +30%/+25% tokens, Sotheby's €100 per activating user, referral +150 tokens).

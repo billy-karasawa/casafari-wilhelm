@@ -15,7 +15,7 @@ Seeded 2026-11-13 from earlier sessions. Full `/followup` sweep 2026-11-13 (see 
 | 8 | Black Friday | English demo link — handled (Billy, 13 Nov) | Billy | done | before 19 Nov email | #product_marketing_coordination | 2026-11-13 |
 | 9 | Black Friday | Platform UTM sign-ups sent to Maryna 13 Nov 08:33 (she acknowledged); one-shot re-run 14 Nov 08:37 still scheduled | Billience | waiting | 2026-11-14 | DM Maryna | 2026-11-13 |
 | 10 | Contracts | Trovara (Yehor OK if they keep liability + we keep derived-data rights; awaiting Billy) · Khome DORA (Yehor dislikes; awaiting Billy since Oct) · C21: Cátia replied cl. 8/9/15, C21 sent new DPA 12 Nov, unsigned (Gmail 1a0e91171608e5c1) · School of Rock termination notice, renewal 28 Nov, no written confirmation | Billy / Legal | open | — | Gmail / #revsquad_and_legal | 2026-11-13 |
-| 11 | Pricing | Sotheby's 2027 proposal (328 users, ~€25–31k/yr): €8/4/2 base/Lead Flow/Chrome; lead magnet (€50?) and AI Presentation Builder option open; Billy tagged 11 & 12 Nov, Nils negotiating | Billy | decision | asap | Slack GJWLX7M2R | 2026-11-13 |
+| 11 | Pricing | Sotheby's 2027: Nils decided 13 Nov: €300/office/mo × 9 = €2,700 (all products, 1 Lead Magnet), 3 AI presentations/user/mo, €4.90 per 7-pack, €100 token bonus per user activating MCP/API, custom template one-off (~€1,500), annual 15–20% at Tiago's call. Ana Lucas/Marcos to re-issue; not yet sent. Contract ends 31 Dec | Ana Lucas / Marcos | waiting | 2026-12-31 | #portugal GJWLX7M2R / leadership DM C0B3J6YBEP4 | 2026-11-13 |
 | 12 | Pricing | FIAIP national deal · RE/MAX Smart 70 agents @ €6.50 · Polo Properties setup fee | Billy | open | — | Slack/Gmail | 2026-11-13 |
 | 13 | Partnerships | €13.2k/yr unused partnerships (MFORTE €500/mo, Corpcom €600/mo + VAT per Tiago 10 Nov) | Billy | decision | — | Slack group DM | 2026-11-13 |
 | 14 | Fotocasa | Meeting outcome (5 Nov) — Barcelona sample used | Nuño | waiting | — | #spain | 2026-11-13 |
@@ -44,4 +44,8 @@ Seeded 2026-11-13 from earlier sessions. Full `/followup` sweep 2026-11-13 (see 
 | 37 | Partnerships | Massimo partnership — Paula asks if ended (fee late; Roberto paying 13 Nov) | Billy | open | — | Slack group DM | 2026-11-13 |
 | 38 | Sales ops | Iñigo López: demo next week must be credited to AM not AE — reply | Billy | open | — | Slack DM | 2026-11-13 |
 | 39 | Finance ops | einforma fiscal-number check out of funds, all checks erroring (13 Nov) | Finance | waiting | — | #tech_finance_issues | 2026-11-13 |
-| 40 | Strategy | Slack trend & direction scan 2–13 Nov delivered (Google Doc 1RTMRtS-gRIXO89BundRvRszv5ZXNP3qeDPU5zxGC9i0 + HTML). Billy to pick which automation candidates/quick wins to start | Billy | decision | — | reports/2026-11-13-slack-trend-scan.html | 2026-11-13 |
+| 40 | Strategy | Slack trend scan v2 (week closed, ~125 threads) delivered: Google Doc 1RTMRtS-gRIXO89BundRvRszv5ZXNP3qeDPU5zxGC9i0 + HTML. Billy to pick automation candidates / quick wins | Billy | decision | 2026-11-17 | reports/2026-11-13-slack-trend-scan.html | 2026-11-13 |
+| 41 | Data | Black Friday attribution: 456 vs 389 new orgs unreconciled; HubSpot shows only 16 → use BigQuery `account_attribution` | Wilhelm | open | 2026-11-17 | BigQuery / #platform-api-mcp | 2026-11-13 |
+| 42 | Platform | HubSpot product "Casafari Platform" + deal stage requested 5 Nov | Billy | open | — | #platform-api-mcp | 2026-11-13 |
+| 43 | ApiCat | DM-permission bug: asked 4× (5–12 Nov), Demian "permanent solution" no ETA/owner; 6 deals affected | Billy (owner?) | open | — | ApiCat DM C0C9CKL256J | 2026-11-13 |
+| 44 | Marketing | BF vs Marcos 1:1 MCP outreach overlap — Yehor alignment meeting Mon 16 Nov | Yehor / Maryna | waiting | 2026-11-16 | #bi_requests C080EM6H32T | 2026-11-13 |

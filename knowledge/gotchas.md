@@ -44,3 +44,5 @@
 - Scheduled tasks: connectors must be added manually by Billy; don't manually fire on a scheduled morning (double posts).
 - Churn signal: don't infer churn drivers from a 3-day sample. In 2–13 Nov there were 54 churn forms; ~55% were closing business or low use (mostly PT long tail), and only 4 cited ApiCat.
 - Bot authorship: posts under Mila's/Nils's/Tiago's names are often their agents. Check the signature before calling something a founder's personal statement.
+- Black Friday / platform sign-ups: HubSpot undercounts massively (16 vs 456). The source of truth is the platform `account_attribution` table (BigQuery, loaded nightly).
+- "No reply" claims from Slack search snippets were wrong 3 times on 13 Nov. Open the thread before stating it.

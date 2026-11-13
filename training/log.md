@@ -31,3 +31,4 @@ Format: `- YYYY-MM-DD · <topic> · <lesson> → filed in <file>`
 - 2026-11-13 · slack · Any Slack message (reply, DM, post, nudge) needs Billy's approval first, at all levels → CLAUDE.md, playbooks/_registry.md, followup skill
 - 2026-11-13 · followup · Full sweep; doc 1-vU80… refreshed in place and renamed "2 to 13 Nov"; HR items kept out of the doc (chat only); tracker C0BF6BRQA8K may not be the Mila/Nuño split thread → followups/open-items.md, knowledge/gotchas.md
 - 2026-11-13 · trend-scan · First Slack trend & direction scan (2–13 Nov); corrected ApiCat churn share (4/54) → playbooks/slack-trend-scan.md, knowledge/gotchas.md
+- 2026-11-13 · trend-scan · v2 thread-depth pass corrected 5 v1 claims (Sotheby's decided, domain-verification void, stale cancellation flag, es_monitoring reactions, data_issues answered) → playbooks/slack-trend-scan.md, knowledge/gotchas.md
