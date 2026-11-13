@@ -12,7 +12,7 @@ Seeded 2026-11-13 from earlier sessions — **statuses as of the source session 
 | 5 | ApiCat | Out-of-tier / test children in invoice control?; DM role fix; child company names | Billy | decision | — | ApiCat DM C0C9CKL256J | 2026-11-12 |
 | 6 | ApiCat | Invoice = max(€8,750, actual) — confirm with finance | Ana Fernandes / Tiago | waiting | — | Slack | 2026-11-11 |
 | 7 | Agens | Licensing questions (clauses 2.6 / 2.7.7); meeting 12 Nov; 6 other API customers asking | Billy | open | 2026-11-12 | Gmail / Slack | 2026-11-11 |
-| 8 | Black Friday | English demo link | Billy | open | before 19 Nov email | #product_marketing_coordination | 2026-11-11 |
+| 8 | Black Friday | English demo link — handled (Billy, 13 Nov) | Billy | done | before 19 Nov email | #product_marketing_coordination | 2026-11-13 |
 | 9 | Black Friday | Re-run Platform UTM sign-ups after refresh, DM Maryna (Billience one-shot 14 Nov 08:37) | Billience | waiting | 2026-11-14 | DM Maryna | 2026-11-13 |
 | 10 | Contracts | Trovara sign-off · Khome DORA contract · C21 commercial agreement unsigned · School of Rock written confirmation | Billy / Legal | open | — | Gmail / #revsquad_and_legal | 2026-11-11 |
 | 11 | Pricing | Sotheby's 2027 proposal (328 users, ~€25–31k/yr) | Billy | open | — | Gmail | 2026-11-11 |
