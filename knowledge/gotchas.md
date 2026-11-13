@@ -42,3 +42,5 @@
 - External CDNs may be blocked in the sandbox → inline JS libs in HTML.
 - Very large single HTML (>2 MB) may not open on Billy's device — pack data column-wise.
 - Scheduled tasks: connectors must be added manually by Billy; don't manually fire on a scheduled morning (double posts).
+- Churn signal: don't infer churn drivers from a 3-day sample. In 2–13 Nov there were 54 churn forms; ~55% were closing business or low use (mostly PT long tail), and only 4 cited ApiCat.
+- Bot authorship: posts under Mila's/Nils's/Tiago's names are often their agents. Check the signature before calling something a founder's personal statement.

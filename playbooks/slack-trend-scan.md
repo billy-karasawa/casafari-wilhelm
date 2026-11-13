@@ -1,7 +1,7 @@
 # Playbook: Slack trend & direction scan
 
 - **Autonomy level:** L0 (new, 2026-11-13); see `_registry.md`
-- **Cadence:** ad hoc (first ask: 2 to 13 Nov 2026, Billy's absence window)
+- **Cadence:** ad hoc. **Last run:** 2026-11-13, window 2–13 Nov. Doc: https://docs.google.com/document/d/1RTMRtS-gRIXO89BundRvRszv5ZXNP3qeDPU5zxGC9i0/edit (HTML copy in `reports/`)
 - **Output destination:** Google Doc in Billy's Drive plus an HTML version (no personal names in anything shared beyond Billy)
 
 ## Purpose
@@ -34,3 +34,9 @@ Tiago (Finance) · Kate B (Data & API).
 ## Quality checks
 - Cite permalinks for every claim. Separate observed facts from inference.
 - Filter bot-agent noise (Mira, Themis, Mary, Billience, monitoring bots), but count bot alerts that nobody acknowledged as a signal.
+
+## Lessons from run 1 (2026-11-13)
+- 5 Sonnet slices with ~110–170k tokens each was enough. Create the Doc by uploading the HTML file with `Drive.create_file` (file reference); Drive then reports `fileSize: 1`, which is normal, so verify by reading the content.
+- Slack search results often lack per-message permalinks. Ask the agents for `ts` values to rebuild them.
+- Many founder posts are written by agents (Mila: Mira/Opusik/OG-Agent; Nils [BOT]; Tiago's agent signature). Label them as founder-sanctioned.
+- Reconcile counts across slices. The catch-up sweep said "~11 forms citing ApiCat", but the full read found 54 churn forms in 12 days, only 4 of them ApiCat-related.
