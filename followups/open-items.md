@@ -1,20 +1,20 @@
 # Open items tracker
 
 Status: `open` (Billy/Wilhelm to act) · `waiting` (someone else owes) · `decision` (needs Billy's call) · `done`.
-Seeded 2026-11-13 from earlier sessions. Full `/followup` sweep 2026-11-13 (see catch-up doc 1-vU80fZVgp1LlbLiWPrNnCwaA0L_pW0Xz6s2zlDfuzY).
+Seeded 2026-11-13 from earlier sessions. Full `/followup` sweep 2026-11-13. **Single brief doc from 13 Nov evening:** "Slack trend scan and action brief" 1RTMRtS-gRIXO89BundRvRszv5ZXNP3qeDPU5zxGC9i0 (Part A = Billy's action points, Part B = company-wide). The older catch-up doc 1-vU80… is superseded.
 
 | # | Topic | Item | Owner | Status | Due | Where | Last checked |
 |---|---|---|---|---|---|---|---|
 | 1 | Security | Rotate Postmark server token pasted in chat (29–30 Oct) and keep it only in env secrets. No rotation evidence as of 13 Nov | Billy | open | asap | Postmark | 2026-11-13 |
 | 2 | ApiCat | Mila Escalera ↔ Nuño commission split (30/70 proposed) for Roberto's file. No activity; C0BF6BRQA8K looks like the Tiago/João/Paulo group, so verify the right thread | Billy | decision | 2026-11-12 | Slack Commissions DM C0BF6BRQA8K (?) | 2026-11-13 |
-| 3 | ApiCat | Churn rule conflict (Mila: 30-day notice + flat team access; Ana F: extra month, hold to renewal). Mila 11 Nov: churn potential miscalculated (C21/KW/CB/E&V agents are API.CAT members); Nils drafting customer email; ~11 churn forms 9–12 Nov cite ApiCat/Colegio | Billy | decision | — | #churn-spain / ApiCat DM | 2026-11-13 |
+| 3 | ApiCat | Churn rule DECIDED by Mila (cancellation = 30-day notice + flat team access); Coldwell Banker Spain still open. Was: conflict (Mila: 30-day notice + flat team access; Ana F: extra month, hold to renewal). Mila 11 Nov: churn potential miscalculated (C21/KW/CB/E&V agents are API.CAT members); Nils drafting customer email; ~11 churn forms 9–12 Nov cite ApiCat/Colegio | Billy | decision | — | #churn-spain / ApiCat DM | 2026-11-13 |
 | 4 | ApiCat | Legal reading of "Novena bis" price floor. Themis 10 Nov summary: floor not optional, discounts/free months count, breach = termination + damages; nothing further | Cátia Martins | waiting | — | #revsquad_and_legal | 2026-11-13 |
 | 5 | ApiCat | Out-of-tier / test children in invoice control?; DM role fix (Demian: permanent fix in progress); child company names; Mila E 12 Nov address-change question unanswered; lead magnet: Yehor checking with api.cat | Billy | decision | — | ApiCat DM C0C9CKL256J | 2026-11-13 |
 | 6 | ApiCat | Invoice = max(€8,750, actual) (3,500 × €2.50) — confirm with finance. No activity | Ana Fernandes / Tiago | waiting | — | Slack | 2026-11-13 |
 | 7 | Agens | Licensing questions (clauses 2.6 / 2.7.7); 12 Nov meeting not on calendar and no notes; custom request in #platform-api-mcp-custom-requests 10 Nov unanswered; 6 other API customers asking | Billy | open | 2026-11-12 | Gmail / Slack | 2026-11-13 |
 | 8 | Black Friday | English demo link — handled (Billy, 13 Nov) | Billy | done | before 19 Nov email | #product_marketing_coordination | 2026-11-13 |
 | 9 | Black Friday | Platform UTM sign-ups sent to Maryna 13 Nov 08:33 (she acknowledged); one-shot re-run 14 Nov 08:37 still scheduled | Billience | waiting | 2026-11-14 | DM Maryna | 2026-11-13 |
-| 10 | Contracts | Trovara (Yehor OK if they keep liability + we keep derived-data rights; awaiting Billy) · Khome DORA (Yehor dislikes; awaiting Billy since Oct) · C21: Cátia replied cl. 8/9/15, C21 sent new DPA 12 Nov, unsigned (Gmail 1a0e91171608e5c1) · School of Rock termination notice, renewal 28 Nov, no written confirmation | Billy / Legal | open | — | Gmail / #revsquad_and_legal | 2026-11-13 |
+| 10 | Contracts | Trovara decided in thread (v2 read 13 Nov) · Khome DORA (Yehor dislikes; awaiting Billy since Oct) · C21: Cátia replied cl. 8/9/15, C21 sent new DPA 12 Nov, unsigned (Gmail 1a0e91171608e5c1) · School of Rock termination notice, renewal 28 Nov, no written confirmation | Billy / Legal | open | — | Gmail / #revsquad_and_legal | 2026-11-13 |
 | 11 | Pricing | Sotheby's 2027: Nils decided 13 Nov: €300/office/mo × 9 = €2,700 (all products, 1 Lead Magnet), 3 AI presentations/user/mo, €4.90 per 7-pack, €100 token bonus per user activating MCP/API, custom template one-off (~€1,500), annual 15–20% at Tiago's call. Ana Lucas/Marcos to re-issue; not yet sent. Contract ends 31 Dec | Ana Lucas / Marcos | waiting | 2026-12-31 | #portugal GJWLX7M2R / leadership DM C0B3J6YBEP4 | 2026-11-13 |
 | 12 | Pricing | FIAIP national deal · RE/MAX Smart 70 agents @ €6.50 · Polo Properties setup fee | Billy | open | — | Slack/Gmail | 2026-11-13 |
 | 13 | Partnerships | €13.2k/yr unused partnerships (MFORTE €500/mo, Corpcom €600/mo + VAT per Tiago 10 Nov) | Billy | decision | — | Slack group DM | 2026-11-13 |

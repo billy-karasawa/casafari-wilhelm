@@ -2,7 +2,9 @@
 
 - **Autonomy level:** L1 (Draft) since 2026-11-13, covering the trend scan plus the 5 derived reports below. See `_registry.md`.
 - **Cadence:** ad hoc. **Last run:** 2026-11-13 v2 (week closed, ~125 threads), window 2–13 Nov. Doc: https://docs.google.com/document/d/1RTMRtS-gRIXO89BundRvRszv5ZXNP3qeDPU5zxGC9i0/edit (HTML copy in `reports/`)
-- **Output destination:** Google Doc in Billy's Drive plus an HTML version (no personal names in anything shared beyond Billy)
+- **Output destination:** ONE merged Google Doc, "Slack trend scan and action brief" (1RTMRtS-gRIXO89BundRvRszv5ZXNP3qeDPU5zxGC9i0).
+  Part A = Billy's action points (from `catch-up-brief.md` and `/followup`); Part B = the company-wide scan.
+  Plus an HTML copy in `reports/`. No personal names in anything shared beyond Billy.
 
 ## L1 scope (approved by Billy 2026-11-13)
 Wilhelm produces each report itself. Each one goes **only to Billy**, as a private Google Doc updated in place plus HTML.

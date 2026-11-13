@@ -53,3 +53,5 @@ Answer/headline first; short; action items first in recurring summaries (2–4 b
 ## Security
 - Billy has pasted secrets (Postmark server token) into chat before. Remind him to use environment
   secrets instead and to rotate anything pasted.
+- **One brief doc (2026-11-13):** Billy wants a single doc that covers both company-wide topics and the action points
+  waiting on his reply (Part A: actions, Part B: company-wide), not separate catch-up and trend docs.
