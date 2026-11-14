@@ -41,3 +41,10 @@ Then "Resolved since last time", "Suggested order for today", and "Coverage (wha
 - commercial@ group address hides senders.
 - Google Doc: create by uploading HTML via `Google_Drive.create_file` (auto-converts); update with
   `Google_Docs.update_doc` (deleteContentRange + insertText, then a styling pass); read back to verify.
+
+## Unread-email complement (added 2026-11-14)
+- When Billy asks for "my unread emails" over a period: run `is:unread after:… before:… -category:promotions -category:social -category:forums`
+  (Updates included), plus `in:sent` for the same window, plus a keyword pass (docusign, signature, contract, invoice, approval,
+  "action required"). Page to the end. Open only threads from people where the preview is unclear.
+- Section in Part A: action needed · cc-only context · FYI. HR items go in chat only. Flag phishing and security alerts first.
+- 14 Nov run: ~201 unread threads, ~75% automated, 1 sent mail in 12 days. Billy works in Slack, not Gmail.
