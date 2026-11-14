@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Black Friday Attribution</title>
+<style>
+:root{--bg:#fff;--fg:#1d1d1f;--mut:#5f6368;--line:#e3e3e6;--acc:#1a5fb4;--chip:#f2f4f7}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17181a;--fg:#e8e8ea;--mut:#a0a3a8;--line:#2e3034;--acc:#7fb0ff;--chip:#222428}}
+:root[data-theme="dark"]{--bg:#17181a;--fg:#e8e8ea;--mut:#a0a3a8;--line:#2e3034;--acc:#7fb0ff;--chip:#222428}
+body{background:var(--bg);color:var(--fg);font:15px/1.55 -apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0 auto;padding:24px 16px;max-width:860px}
+h1{font-size:23px;margin:0 0 4px}h2{font-size:18px;margin:26px 0 8px;border-bottom:1px solid var(--line);padding-bottom:4px}
+.sub{color:var(--mut);font-size:13px}.box{background:var(--chip);border-radius:8px;padding:12px 14px;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:13.5px;display:block;overflow-x:auto}th,td{border:1px solid var(--line);padding:6px 8px;text-align:right}th:first-child,td:first-child{text-align:left}th{background:var(--chip)}
+</style></head><body>
+<h1>Black Friday attribution: first two days (R5)</h1>
+<p class="sub">Prepared by Wilhelm for Billy, Sat 14 Nov 2026. Source: BigQuery <code>casafari-cloud.casafari_platform</code>, nightly export of 14 Nov 02:30 UTC. This covers sign-ups from 12 Nov 00:00 to 14 Nov 02:30 UTC. Internal and test accounts are excluded. Read-only queries; the tables are about 100 KB, so cost is negligible.</p>
+
+<div class="box"><b>Headline.</b> Black Friday brought <b>400 tagged new organisations in 2 days</b>, about 10× the normal rate of about 20 sign-ups a day.
+<ul>
+<li><b>By channel:</b> banners 304 (app 252, mobile 52), email 1 95, untagged code 1.</li>
+<li><b>Activation:</b> 15% have run a query so far, about 85% of them through MCP.</li>
+<li><b>Revenue:</b> <b>no paid conversions yet</b>. No paid plan, no card on file, no invoice.</li>
+<li><b>Reconciliation:</b> Mila's agent's figures check out (456 total, 87 email, 299 banners). HubSpot's "16" is a reporting problem: HubSpot holds the tags for 75% of these sign-ups.</li>
+</ul></div>
+
+<h2>New organisations by channel and day</h2>
+<table>
+<tr><th>Channel</th><th>12 Nov</th><th>13 Nov</th><th>14 Nov*</th><th>Total</th><th>Used (any query)</th><th>via MCP</th><th>Tokens consumed</th><th>Paid</th></tr>
+<tr><td>BF app banner</td><td>203</td><td>48</td><td>1</td><td><b>252</b></td><td>40 (16%)</td><td>33</td><td>6,443</td><td>0</td></tr>
+<tr><td>BF mobile banner</td><td>40</td><td>12</td><td>–</td><td><b>52</b></td><td>3 (6%)</td><td>3</td><td>319</td><td>0</td></tr>
+<tr><td>BF email 1</td><td>1</td><td>94</td><td>–</td><td><b>95</b></td><td>19 (20%)</td><td>16</td><td>2,027</td><td>0</td></tr>
+<tr><td>BF code, no tracking tag</td><td>–</td><td>1</td><td>–</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td><b>Black Friday total</b></td><td><b>244</b></td><td><b>155</b></td><td><b>1</b></td><td><b>400</b></td><td><b>62 (15.5%)</b></td><td><b>52</b></td><td><b>8,789</b></td><td><b>0</b></td></tr>
+<tr><td>Untagged (organic, other)</td><td>33</td><td>36</td><td>–</td><td>69</td><td>23 (33%)</td><td>16</td><td>2,608</td><td>0</td></tr>
+<tr><td>R-codes, no tracking tag (see below)</td><td>3</td><td>1</td><td>–</td><td>4</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td><b>All new organisations</b></td><td><b>280</b></td><td><b>192</b></td><td><b>1</b></td><td><b>473</b></td><td>85</td><td>68</td><td>11,397</td><td>0</td></tr>
+<tr><td class="sub">Baseline, 1–11 Nov (per day)</td><td colspan="3">20.1 per day (221 in 11 days)</td><td>221</td><td>118 (53%)</td><td>87</td><td>38,015</td><td>2 (€360.58)</td></tr>
+</table>
+<p class="sub">* 14 Nov covers only 00:00–02:30 UTC. "Tokens consumed" means trial tokens billed against usage, not revenue. Email 1's link variants: "connect" 78, "landing-button" 10, "signin" 7.</p>
+
+<h2>Reconciliation</h2>
+<ul>
+<li><b>Bot post of 389, and Mila's agent's 456</b> (13 Nov, about 20:18 UTC): BigQuery at that exact time shows <b>388 Black Friday-tagged</b> and <b>457 total</b> new organisations. <b>Exact match.</b> The 389 counts tagged sign-ups only; the 456 includes untagged ones.</li>
+<li><b>By end of day</b> the counts had grown to 473 total, 95 from email (agent said 87) and 304 from banners (agent said 299). The 2–9% differences are sign-ups after the post.</li>
+<li><b>HubSpot shows 16:</b> wrong as a count. The platform wrote the tracking tags to HubSpot contacts for <b>307 of 408</b> tagged sign-ups (75%). The "16" must come from a report that filters on something else: deals, lifecycle stage or <code>hs_analytics_source</code>. Fix the HubSpot report, or report from BigQuery. 101 sign-ups never reached HubSpot, including the 4 R-codes.</li>
+</ul>
+
+<h2>What it means</h2>
+<ul>
+<li><b>Reach worked; conversion hasn't started.</b> Black Friday sign-ups activate at about half the same-day rate of organic sign-ups (15% vs 33%). The baseline cohort reached 53% with more days, so expect this to rise. Watch it in R5 runs after email 2 (19 Nov).</li>
+<li><b>Payment comes later.</b> The token bonus (+30% to 23 Nov, +25% 24–30 Nov) only applies on a top-up. With no paid conversion yet, <b>no bonus tokens have been granted</b>.</li>
+<li><b>Banners outperform email in volume</b> (304 vs 95), so in-app users are the main audience. Email converts to usage slightly better (20% vs 16%). Mobile banner users barely activate (6%).</li>
+<li><b>No country split:</b> the billing country comes from Stripe, which only applies after a card payment. A country view needs another source, such as member email domain or HubSpot contact country.</li>
+</ul>
+
+<h2>Open questions</h2>
+<ul>
+<li><b>4 sign-ups with random "R…" codes and no tracking tags</b> (e.g. RGW64G1BY9XYC). They aren't flagged as client or staff referrals. They're probably personal referral links or partner links. Kate or the platform team can confirm.</li>
+<li><b>1 sign-up with BLACKFRIDAY30 but no tracking tags:</b> the code was typed or the link was shared directly.</li>
+<li>Are any of these 400 sign-ups existing web-app clients? That needs a match by domain or email to HubSpot companies. Not done here, because the platform tables hold no emails.</li>
+</ul>
+
+<h2>Method</h2>
+<p class="sub">Tables: <code>accounts</code> (excluding <code>is_internal</code> and accounts flagged internal on any night), <code>account_attribution</code> (UTM tracking tags, promotion code, <code>hubspot_written_at</code>), <code>usage_daily</code> (calls, billed units, channel), <code>invoices</code> (status paid). Channel = utm_campaign "black-friday…": email if utm_medium=email; mobile if the source is casafari-mobile or mobile-app; otherwise app banner. Days are Lisbon dates. Next run: after email 2 (19 Nov), then 24 and 30 Nov.</p>
+</body></html>

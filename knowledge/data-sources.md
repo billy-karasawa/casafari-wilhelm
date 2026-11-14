@@ -160,3 +160,9 @@ WITH cust AS (SELECT account_id, trial_units FROM `casafari-cloud.casafari_platf
   WHERE NOT IFNULL(is_internal,false)
     AND account_id NOT IN (SELECT account_id FROM `casafari-cloud.casafari_platform.accounts_daily_snapshot` WHERE is_internal))
 ```
+
+### Black Friday attribution (R5), working SQL notes (2026-11-14)
+- Channel: `att.utm_campaign LIKE 'black-friday%'`; email if `utm_medium='email'` (utm_content connect / landing-button / signin);
+  mobile if `utm_source IN ('casafari-mobile','mobile-app')`; else app banner. Random `R…` promotion codes without UTM = unknown referral links (open question).
+- Activation = `usage_daily.calls > 0`; MCP = `channel='mcp'`; paid = `invoices.status='paid'` or `accounts.card_verified_at`.
+- Baseline 1–11 Nov 2026: 20.1 new external orgs/day, 53% activated, 2 paid (€360.58).

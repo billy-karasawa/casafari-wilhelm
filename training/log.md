@@ -35,3 +35,4 @@ Format: `- YYYY-MM-DD · <topic> · <lesson> → filed in <file>`
 - 2026-11-13 · registry · promoted slack-trend-scan to L1 (scan + 5 derived reports R1–R5: churn reasons, legal-asks digest, unanswered inbound, #tools-support types, BF attribution); Billy's explicit OK; drafts to Billy only → playbooks/_registry.md, playbooks/slack-trend-scan.md
 - 2026-11-13 · catch-up + trend-scan · Merge into one doc (Part A actions for Billy, Part B company-wide); old catch-up doc superseded → knowledge/user-preferences.md, playbooks/catch-up-brief.md, playbooks/slack-trend-scan.md
 - 2026-11-14 · catch-up · Unread-email section added to the merged brief; HR items chat-only; security alerts surfaced first → playbooks/catch-up-brief.md, followups/open-items.md #45–48
+- 2026-11-14 · R5 · First Black Friday attribution run (clean); HubSpot undercount explained; country blank until Stripe payment → playbooks/slack-trend-scan.md, knowledge/data-sources.md

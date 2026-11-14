@@ -94,7 +94,7 @@ Tiago (Finance) · Kate B (Data & API).
   automation candidates with estimated hours saved.
 - **Quality checks:** exclude "staff test" posts. Compare against the 2–13 Nov baseline (~48 tickets in 12 days).
 
-### R5 · Black Friday attribution (BigQuery)
+### R5 · Black Friday attribution (BigQuery) — last run 2026-11-14, doc 1-hBYNvOisz9dL3QhVXhjtrh_ZzTzujEZGqg2qGlT8XY
 - **Cadence:** on request, and after each wave (email 2 on 19 Nov, then 24 and 30 Nov). Read-only queries.
 - **Source:** `casafari-cloud.casafari_platform` (account_attribution with utm_*, accounts, usage_daily), refreshed ~02:30 UTC.
   Exclude internal accounts (`accounts_daily_snapshot.is_internal`).
@@ -106,3 +106,9 @@ Tiago (Finance) · Kate B (Data & API).
   agent's posts (456 / 389) and HubSpot (16).
 - **Quality checks:** estimate the cost (bytes scanned) before running. If the totals differ from Slack-reported numbers by more than 20%,
   explain the gap before reporting.
+
+## R5 lessons (run 1, 2026-11-14)
+- `at` is a reserved word in BigQuery, so alias account_attribution as `att`. `promotion` is recorded, not redeemed, so a bonus only exists after a top-up.
+- `accounts.country_iso2` comes from Stripe and is blank until a card payment, so there's no country split for free sign-ups.
+- Reconcile Slack-posted numbers at the post's exact timestamp (Slack shows UTC−3); 13 Nov matched exactly.
+- HubSpot BF reports undercount: `hubspot_written_at` shows tags reached HubSpot for 75% of sign-ups, so the "16" comes from a report filter.
